@@ -8,8 +8,8 @@ import {
   selectError,
   selectFilteredContacts,
   selectIsLoading,
-} from 'redux/selectors';
-import { deleteContact, fetchContacts } from 'redux/operations';
+} from 'redux/Contacts/selectors';
+import { deleteContact, fetchContacts } from 'redux/Contacts/operations';
 import { Loader } from 'components/Loader/Loader';
 
 export const ContactList = () => {

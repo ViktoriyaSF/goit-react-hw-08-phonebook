@@ -2,10 +2,10 @@
 import React from 'react';
 import { Form, Input, Label, Button } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'redux/selectors';
+import { selectContacts } from 'redux/Contacts/selectors';
 // import { nanoid } from 'nanoid';
 import { toast } from 'react-toastify';
-import { addContact } from 'redux/operations';
+import { addContact } from 'redux/Contacts/operations';
 
 export const ContactForm = () => {
   const contacts = useSelector(selectContacts);

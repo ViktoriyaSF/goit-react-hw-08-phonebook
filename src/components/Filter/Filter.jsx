@@ -5,8 +5,8 @@ import { LabelFilter } from './Filter.styled';
 import { Input } from 'components/ContactForm/ContactForm.styled';
 import { FiSearch } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectFilter } from 'redux/selectors';
-import { setFilter } from 'redux/filterSlice';
+import { selectFilter } from 'redux/Contacts/selectors';
+import { setFilter } from 'redux/Contacts/filterSlice';
 
 // const idFilter = nanoid();
 export const Filter = () => {
