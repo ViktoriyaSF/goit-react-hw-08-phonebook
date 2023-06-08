@@ -13,7 +13,26 @@ background: rgb(174,238,203);
 background: radial-gradient(circle, rgba(174,238,203,0.7455357142857143) 0%, rgba(148,187,233,1) 100%);
 
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #2a363b;
+  background-color: #372be2;
+  font-size: 18px;
+  a {
+    color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+}
 
+a.active {
+  color: #fbff02;
+}
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

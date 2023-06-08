@@ -1,34 +1,38 @@
 import React, { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from './Layout/Layout';
+import { Layout } from './Layout';
 
-// import { GlobalStyle } from './BasicStyles/GlobalStyle';
+import { GlobalStyle } from './BasicStyles/GlobalStyle';
 // import { ContactForm } from './ContactForm/ContactForm';
 // import { ContactList } from './ContactList/ContactList';
 // import { Filter } from './Filter/Filter';
-// import { ToastContainer } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const RegisterPage = lazy(() => import('../pages/Register.jsx'));
-const LoginPage = lazy(() => import('../pages/Login.jsx'));
+const RegisterPage = lazy(() => import('../pages/Register'));
+const LoginPage = lazy(() => import('../pages/Login'));
+const ContactsPage = lazy(() => import('../pages/Contacts-pages'));
 
 export const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/login" element={<LoginPage />} />
-      </Route>
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+        </Route>
+      </Routes>
+      <ToastContainer position="top-center" />
+      <GlobalStyle />
+    </>
 
     // <Layout>
-    //   <h1>Phonebook</h1>
-    //   <ContactForm />
-    //   <h2>Contacts</h2>
-    //   <Filter />
-    //   <ContactList />
-    //   <ToastContainer position="top-center" />
-    //   <GlobalStyle />
+    // <h1>Phonebook</h1>
+    // <ContactForm />
+    // <h2>Contacts</h2>
+    // <Filter />
+    // <ContactList />
     // </Layout>
   );
 };
