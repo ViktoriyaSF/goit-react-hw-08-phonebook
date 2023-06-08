@@ -29,3 +29,14 @@ export const ContainerStyl = styled.div`
   justify-content: center;
   align-items: center; */
 `;
+export const HomePageStyl = styled.div`
+  text-align: center;
+  h1 {
+    font-size: 48px;
+    margin-top: 45%;
+  }
+  p {
+    font-size: 20px;
+    margin-top: 7%;
+  }
+`;
