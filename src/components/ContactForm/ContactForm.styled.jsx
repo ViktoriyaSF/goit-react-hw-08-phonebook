@@ -28,7 +28,7 @@ export const Input = styled.input`
 export const Button = styled.button`
   display: inline-block;
   padding: 5px 10px;
-  margin: 0px 10px;
+  margin: 10px 10px;
   border: none;
   border-radius: 5px;
   background-color: rgb(33, 150, 243);
@@ -42,8 +42,8 @@ export const Button = styled.button`
   }
   &:active {
     scale: 0.95;
-    background-color: #f12828a9;
-    outline: 5px solid #f12828a9;
+    background-color: green;
+    outline: 5px solid green;
     outline-offset: 7px;
   }
 `;

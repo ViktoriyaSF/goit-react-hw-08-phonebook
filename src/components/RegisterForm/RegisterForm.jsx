@@ -1,3 +1,10 @@
+import {
+  Form,
+  Input,
+  Label,
+  Button,
+} from 'components/ContactForm/ContactForm.styled';
+
 export const RegisterForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
@@ -7,22 +14,20 @@ export const RegisterForm = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} autoComplete="off">
-        <label>
-          Username
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Password
-          <input type="password" name="password" />
-        </label>
-        <button type="submit">Register</button>
-      </form>
-    </div>
+    <Form onSubmit={handleSubmit} autoComplete="off">
+      <Label>
+        Username
+        <Input type="text" name="name" />
+      </Label>
+      <Label>
+        Email
+        <Input type="email" name="email" />
+      </Label>
+      <Label>
+        Password
+        <Input type="password" name="password" />
+      </Label>
+      <Button type="submit">Register</Button>
+    </Form>
   );
 };

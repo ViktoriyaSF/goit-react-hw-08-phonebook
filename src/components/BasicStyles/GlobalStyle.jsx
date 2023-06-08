@@ -14,13 +14,16 @@ background: radial-gradient(circle, rgba(174,238,203,0.7455357142857143) 0%, rgb
 
 }
 header {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
-  border-bottom: 1px solid #2a363b;
-  background-color: #372be2;
+
+background-color: #3f51b5;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   font-size: 18px;
+  padding: 0 15px;
   a {
     color: white;
   display: inline-block;
@@ -65,15 +68,9 @@ button {
   border: none;
   border-radius: 4px;
 }
-div {
+
   form {
-  width: 320px;
+  max-width: 480px;
 }
 
-label {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
-}
-}
 `;

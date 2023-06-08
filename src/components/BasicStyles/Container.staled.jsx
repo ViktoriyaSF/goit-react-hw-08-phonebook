@@ -33,7 +33,7 @@ export const HomePageStyl = styled.div`
   text-align: center;
   h1 {
     font-size: 48px;
-    margin-top: 45%;
+    margin-top: 25%;
   }
   p {
     font-size: 20px;

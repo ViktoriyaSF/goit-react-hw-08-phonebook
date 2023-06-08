@@ -1,3 +1,10 @@
+import {
+  Form,
+  Input,
+  Label,
+  Button,
+} from 'components/ContactForm/ContactForm.styled';
+
 export const LoginForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
@@ -7,18 +14,16 @@ export const LoginForm = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} autoComplete="off">
-        <label>
-          Email
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Password
-          <input type="password" name="password" />
-        </label>
-        <button type="submit">Log In</button>
-      </form>
-    </div>
+    <Form onSubmit={handleSubmit} autoComplete="off">
+      <Label>
+        Email
+        <Input type="email" name="email" />
+      </Label>
+      <Label>
+        Password
+        <Input type="password" name="password" />
+      </Label>
+      <Button type="submit">Log In</Button>
+    </Form>
   );
 };
