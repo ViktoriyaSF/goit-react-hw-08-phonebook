@@ -39,7 +39,17 @@ export const register = createAsyncThunk(
  */
 export const logIn = createAsyncThunk(
   'auth/login',
-  async (credentials, thunkAPI) => {}
+  async (credentials, thunkAPI) => {
+    try {
+      const response = await axios.post('/users/login', credentials);
+      setAuthHeader(response.data.token);
+      toast.success('Welcome back!');
+      return response.data;
+    } catch (error) {
+      toast.error('Wrong password or email. Please try again!');
+      return thunkAPI.rejectWithValue(error.message);
+    }
+  }
 );
 
 /*
