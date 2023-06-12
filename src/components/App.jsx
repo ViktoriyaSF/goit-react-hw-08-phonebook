@@ -9,7 +9,7 @@ import { GlobalStyle } from './BasicStyles/GlobalStyle';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const HomePage=lazy(()=> import('../pages/Home'))
+const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
 const ContactsPage = lazy(() => import('../pages/Contacts-pages'));
@@ -28,13 +28,5 @@ export const App = () => {
       <ToastContainer position="top-center" />
       <GlobalStyle />
     </>
-
-    // <Layout>
-    // <h1>Phonebook</h1>
-    // <ContactForm />
-    // <h2>Contacts</h2>
-    // <Filter />
-    // <ContactList />
-    // </Layout>
   );
 };
