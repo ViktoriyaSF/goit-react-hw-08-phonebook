@@ -2,7 +2,7 @@ import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { toast } from 'react-toastify';
 
-axios.defaults.baseURL = `https://connections-api.herokuapp.com`;
+axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 // Utility to add JWT
 const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
@@ -24,7 +24,7 @@ export const register = createAsyncThunk(
     try {
       const response = await axios.post('/users/signup', credentials);
       console.log(response.data);
-      // setAuthHeader(response.data.token);
+      setAuthHeader(response.data.token);
       toast.success('Welcome to phonebook!');
       return response.data;
     } catch (error) {
