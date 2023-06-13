@@ -31,6 +31,10 @@ export const ContainerStyl = styled.div`
 `;
 export const HomePageStyl = styled.div`
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  max-width: 720px;
   h1 {
     font-size: 48px;
     margin-top: 17%;
