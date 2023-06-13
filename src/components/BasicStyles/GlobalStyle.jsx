@@ -43,8 +43,12 @@ nav {
   gap:20px;
     justify-items:center;
   align-items: center;
-  svg:hover,
+  /* svg:hover,
 svg:focus {
+    color: #0de30d;
+  } */
+    a:hover,
+a:focus {
     color: #0de30d;
   }
 }
