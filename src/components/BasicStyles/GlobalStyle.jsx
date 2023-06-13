@@ -14,9 +14,12 @@ background: radial-gradient(circle, rgba(174,238,203,0.7455357142857143) 0%, rgb
 
 }
 header {
-  
+  height: 60px;
+  place-items: center;
   display: flex;
   justify-content: space-between;
+  gap: 5px;
+  justify-items:center;
   align-items: center;
 
 background-color: #3f51b5;
@@ -28,13 +31,22 @@ background-color: #3f51b5;
     color: white;
   display: inline-block;
   text-decoration: none;
-  padding: 12px;
   font-weight: 700;
 }
-
 a.active {
   color: #fbff02;
 }
+}
+nav {
+  display: flex;
+   flex-wrap: nowrap;
+  gap:20px;
+    justify-items:center;
+  align-items: center;
+  svg:hover,
+svg:focus {
+    color: #0de30d;
+  }
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -67,10 +79,14 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  &:hover,&:focus {
+      transform: scale(1.025);
+    }
 }
 
   form {
   max-width: 480px;
 }
+
 
 `;

@@ -1,4 +1,4 @@
-import { HomePageStyl } from 'components/BasicStyles/Container.staled';
+import { HomePageStyl } from 'components/BasicStyles/Container.styled';
 
 export default function Home() {
   return (
